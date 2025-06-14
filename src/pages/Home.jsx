@@ -6,10 +6,12 @@ import ServiceCard from '../components/ServiceCard';
 import { FaHelicopter, FaPlane, FaCar } from 'react-icons/fa';
 
 // Import images correctly
-import helicopterImg from '../assets/images/lux1.jpg';
-import jetImg from '../assets/images/lux2.jpg';
-import suvImg from '../assets/images/lux3.jpg';
+import helicopterImg from '../assets/images/lux2.jpg';
+import jetImg from '../assets/images/lux3.jpg';
+import suvImg from '../assets/images/lux1.jpg';
 import aboutImage from '../assets/images/lux4.jpg';
+
+
 
 const Home = () => {
   return (
@@ -27,9 +29,9 @@ const Home = () => {
         <section className="about-us" id="about">
           
           <div className="about-us-text">
-            <h2>About Us</h2>
+            <h2>Luxury Mobility In Africa. Elevated.</h2>
           <p>
-            We provide the best luxury air transport services in Africa. Our fleet includes helicopters, private jets, and SUVs to cater to all your travel needs.
+            We deliver the continent’s premier luxury air transport services, designed exclusively for high-net-worth individuals and elite travelers. Our fleet of state-of-the-art helicopters, private jets, and luxury SUVs ensures seamless, secure, and stylish travel from takeoff to destination. Whether for business, leisure, or VIP engagements, we offer unmatched discretion, comfort, and personalized service—because your time and experience deserve nothing less than exceptional.
           </p>
           </div>
           <div className="about-image">
@@ -38,14 +40,18 @@ const Home = () => {
           </div>
         </section>
         <section className="contact-us" id="contact">
+          <div className="contact-us-text">
           <h2>Contact Us</h2>
           <p>If you have any questions or would like to make a booking, please contact us.</p>
+          </div>
+          <div className="contact-form">
           <form>
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
           </form>
+          </div>
         </section>
       </main>
       <Footer />
